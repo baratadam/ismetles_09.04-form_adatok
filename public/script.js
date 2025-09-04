@@ -16,3 +16,17 @@ const clearBtn = document.getElementById('clearData');
         document.getElementById('outHazszam').textContent = '-';
       }
     }
+    // Mentés gomb
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const data = {
+        nev: document.getElementById('nev').value,
+        telepules: document.getElementById('telepules').value,
+        iranyitoszam: document.getElementById('iranyitoszam').value,
+        kozterulet: document.getElementById('kozterulet').value,
+        hazszam: document.getElementById('hazszam').value
+      };
+      localStorage.setItem('felhasznaloAdatok', JSON.stringify(data));
+      showData();
+      form.reset();
+    });
