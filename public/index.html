@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Adatbekérés és LocalStorage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Felhasználói adatok</h1>
+  <div class="container">
+    <form id="adatForm">
+      <label for="nev">Név:</label>
+      <input type="text" id="nev" required>
+
+      <label for="telepules">Település:</label>
+      <input type="text" id="telepules" required>
+
+      <label for="iranyitoszam">Irányítószám:</label>
+      <input type="text" id="iranyitoszam" required>
+
+      <label for="kozterulet">Közterület:</label>
+      <input type="text" id="kozterulet" required>
+
+      <label for="hazszam">Házszám:</label>
+      <input type="text" id="hazszam" required>
+
+      <div class="buttons">
+        <button type="submit" class="save">Mentés</button>
+        <button type="button" class="delete" id="clearData">Adatok törlése</button>
+      </div>
+    </form>
+    
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
