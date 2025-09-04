@@ -30,3 +30,8 @@ const clearBtn = document.getElementById('clearData');
       showData();
       form.reset();
     });
+     // Törlés gomb
+    clearBtn.addEventListener('click', function() {
+      localStorage.removeItem('felhasznaloAdatok');
+      showData();
+    });
