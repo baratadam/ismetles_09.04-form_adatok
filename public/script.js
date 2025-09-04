@@ -16,7 +16,7 @@ const clearBtn = document.getElementById('clearData');
         document.getElementById('outHazszam').textContent = '-';
       }
     }
-    // Mentés gomb
+    
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       const data = {
@@ -30,8 +30,10 @@ const clearBtn = document.getElementById('clearData');
       showData();
       form.reset();
     });
-     // Törlés gomb
+     
     clearBtn.addEventListener('click', function() {
       localStorage.removeItem('felhasznaloAdatok');
       showData();
     });
+    
+    showData();
